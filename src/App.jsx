@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './'
+import './index.css'
 import Aside from './components/Aside'
 
 import './App.css'
