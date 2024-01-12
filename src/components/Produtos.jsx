@@ -1,13 +1,13 @@
 export default function Produtos(props) {
     return (
         <div className="card-mobile">
-            <h1>Espetos</h1>
+            <h1>{props.categoria}</h1>
 
-            <img className="coroa" src="imagens/coroa dourada-2.svg" alt="" />
-            <p className="nome-produto">{props.produto}</p>
-            <p className="preco-mobile">R$ {props.preco}</p>
+            <img className="coroa" src="./src/assets/coroa-dourada.svg" alt="icon coroa" />
+            <p className="nome-produto">{props.nomeProduto}</p>
+            <p className="preco-mobile">R${props.preco}</p>
 
-            <img className="img-carne-mobile" src="imagens/img-espeto-de-carne-mobile.png" alt="" />
+            <img className="img-carne-mobile" src={props.src} alt={props.alt} />
 
             <div className="qnt-pedido" data-app="product.quantity">
                 <input className="btn-remover" type="button" id="menos" value='-'
