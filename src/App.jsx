@@ -7,23 +7,24 @@ import Produtos from './components/Produtos'
 
 const espetosLista = [
   {
-    nomeProduto: "Espeto de linguiça",
+    nomeProduto: "Espeto de camarão",
     categoria: "Espeto",
     preco: "8.00",
-    src: "/src/assets/espetos/espeto-linguica-mobile.png",
+    src: "/src/assets/espetos/img-prato-de-espeto-camarao.png",
     alt: "imagem de um espeto de linguiça"
   },
   {
     nomeProduto: "Espeto de carne",
     categoria: "Espeto",
     preco: "8.00",
-    src: "/src/assets/espetos/espeto-carne-mobile.png",
+    src: "/src/assets/espetos/img-prato-de-espeto-carne.png",
     alt: "imagem de um espeto de carne"
-  }, {
-    nomeProduto: "Espeto de carne",
+  },
+  {
+    nomeProduto: "Espeto de frango",
     categoria: "Espeto",
     preco: "8.00",
-    src: "/src/assets/espetos/espeto-frango-mobile.png",
+    src: "/src/assets/espetos/img-prato-de-espeto-frango.png",
     alt: "imagem de um espeto de frango"
   }
 ];
