@@ -4,6 +4,8 @@ import Aside from './components/Aside'
 import Header from './components/Header'
 import Section from './components/Section'
 import Produtos from './components/Produtos'
+import './telaProduto.css'
+import TelaProduto from './TelaProduto'
 
 const espetosLista = [
   {
@@ -80,7 +82,9 @@ function App() {
 
   return (
     <>
-      <div className='desktop'></div>
+      <div className='desktop'>
+      <TelaProduto/>
+      </div>
 
       <div className='mobile'>
         <Header />
@@ -135,6 +139,7 @@ function App() {
           </Section>
         </main>
       </div>
+
     </>
   )
 }

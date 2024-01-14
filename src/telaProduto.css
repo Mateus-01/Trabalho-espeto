@@ -1,0 +1,230 @@
+*{
+    margin: none;
+    padding: none;
+}
+.detalhe-prodt {
+    background-color: #F9F9FB;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.btn-voltar {
+    border-radius: 13px;
+    border: 2px solid #CDCDCD;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    font-family: 'poppins', 'Courier New', Courier, monospace;
+    font-size: 6vw;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+
+.texto>.nomeProduto {
+    color: #313234;
+    font-family: Montserrat;
+    font-size: 10vw;
+    width: 250px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5.5vw;
+}
+
+.texto>.preco {
+    color: #E4723C;
+    font-family: Montserrat;
+    font-size: 7.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 5vw;
+    margin-bottom: 5.5vh;
+}
+
+.texto>.info {
+    font-family: "Montserrat";
+    list-style-type: none;
+}
+
+/* Estilo para o primeiro e terceiro elementos li dentro da ul */
+.texto>.info li:nth-child(1),
+.texto>.info li:nth-child(3),
+.texto>.info li:nth-child(5) {
+    color: #999999;
+    font-size: 4.5vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+/* Estilo para o segundo e quarto elementos li dentro da ul */
+.texto>.info li:nth-child(2),
+.texto>.info li:nth-child(4),
+.texto>.info li:nth-child(6) {
+    font-size: 5.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.detalhe-prodt>.ingredientes {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 3.5vw;
+    margin-top: -1vh;
+}
+
+.detalhe-prodt>.box-ingredientes {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box-ingredientes>.card-ingredientes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3.5vw;
+    width: 25vw;
+    height: 8vh;
+    border-radius: 2vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 3px rgba(173, 173, 173, 0.67);
+}
+.card-ingredientes> img{
+    width: 14vw;
+}
+
+.grid {
+    display: flex;
+    flex: 1;
+    padding: 0px 0px 0px 3.5vw;
+}
+
+.detalhe-prodt>.texto,
+.detalhe-prodt>.imagem {
+    flex: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.imagem {
+    position: relative;
+
+}
+
+.imagem>img {
+    width: 55vw;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 17vw;
+    right: 20vw;
+}
+
+@media only screen and (min-width: 680px) {
+    .imagem>img {
+        width: 50vw;
+        height: auto;
+        display: block;
+        position: relative;
+        top: 13vw;
+        left: -5vw;
+    }
+
+    .texto>.nomeProduto {
+        margin-top: 2vh;
+        font-size: 5.5vw;
+        width: 250px;
+    }
+
+    .texto>.preco {
+        color: #E4723C;
+        font-family: Montserrat;
+        font-size: 4.5vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 4vw;
+        margin-top: 2vh;
+    }
+
+    /* Estilo para o primeiro e terceiro elementos li dentro da ul */
+    .texto>.info li:nth-child(1),
+    .texto>.info li:nth-child(3),
+    .texto>.info li:nth-child(5) {
+        color: #999999;
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 1vw;
+    }
+
+    /* Estilo para o segundo e quarto elementos li dentro da ul */
+    .texto>.info li:nth-child(2),
+    .texto>.info li:nth-child(4),
+    .texto>.info li:nth-child(6) {
+        font-size: 3.5vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+        margin-bottom: 2.5vw;
+    }
+    .btn-voltar {
+        width: 8vw;
+        height: 6vh;
+        border-radius: 1.9vw;
+        border: 0.5vw solid #CDCDCD;
+        background-color: transparent;
+        font-family: 'poppins', 'Courier New', Courier, monospace;
+        font-size: 4vw;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .detalhe-prodt>.ingredientes {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 3vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 3.5vw;
+        margin-top: 1vh;
+    }
+    .box-ingredientes>.card-ingredientes {
+        margin-top: -3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3.5vw;
+        width: 20vw;
+        height: 7vh;
+        border-radius: 2vw;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 3px rgba(173, 173, 173, 0.67);
+    }
+    .card-ingredientes> img{
+        width: 12vw;
+    }
+}
