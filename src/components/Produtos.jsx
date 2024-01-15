@@ -13,12 +13,7 @@ export default function Produtos(props) {
     // Este bloco é apenas para fins de exemplo, você deve integrar a lógica conforme necessário.
     console.log(`Produto adicionado ao carrinho: ${nomeProduto}, Valor: ${valorUnitario}`);
   }
-  if (quantidadeNoCarrinho => 0) {
-    document.getElementById('botaoContainer').style.display = 'block';
-    document.getElementById('meuBotao').addEventListener('click', function() {
-    });
 
-    
   // JSX do componente Produtos
   return (
     <div className="card-mobile">
@@ -54,12 +49,18 @@ export default function Produtos(props) {
           type="button"
           id="mais"
           value="+"
-          onClick={() => setQuantidadeNoCarrinho(quantidadeNoCarrinho + 1)}
+          onClick={() => adicionarAoCarrinho(props.nomeProduto, parseFloat(props.preco))}
         />
-
-       
-        
       </div>
+
+      {/* Exibir o botão no meio da tela inteira */}
+      {quantidadeNoCarrinho >= 1 && (
+        <div style={{position: 'relative', marginLeft: '30vw'}} className="botao-no-meio">
+          <button style={{height: '70px', borderRadius: '30px', backgroundColor: 'yellow'}} id="botao">Botão de Exemplo</button>
+          {/* Substitua "Botão de Exemplo" pelo conteúdo que você deseja exibir */}
+        </div>
+      )}
     </div>
   );
 }
+    
