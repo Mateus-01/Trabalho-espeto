@@ -111,6 +111,7 @@ function App() {
             {espetosLista.map(function (item) {
               return (
                 <Produtos categoria={item.categoria} nomeProduto={item.nomeProduto} preco={item.preco} src={item.src} alt={item.alt} />
+                
               );
             })}
           </Section>
