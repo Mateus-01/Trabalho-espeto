@@ -10,7 +10,7 @@ export default function TelaProduto(){
     }
     return (
         <div className='detalhe-prodt' id='telaProduto'>
-            <button id='voltar' onClick={esconderTela} class="btn-voltar">&lt;</button>
+            <button id='voltar'  class="btn-voltar">&lt;</button>
             <TelaMain />
             <p class="ingredientes">ingredientes</p>
             <TelaFooter />
