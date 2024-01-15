@@ -78,15 +78,13 @@ const bebidasLista = [
 ];
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className='desktop'>
-      <TelaProduto/>
       </div>
 
       <div className='mobile'>
+      <TelaProduto/>
         <Header />
         <main>
           <h3>Categorias</h3>
@@ -132,6 +130,7 @@ function App() {
             title="Bebidas"
           >
             {bebidasLista.map(function (item) {
+
               return (
                 <Produtos categoria={item.categoria} nomeProduto={item.nomeProduto} preco={item.preco} src={item.src} alt={item.alt} />
               );

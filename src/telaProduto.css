@@ -5,11 +5,13 @@
 
 .detalhe-prodt {
     background-color: #F9F9FB;
-    position: relative;
-    display: flex;
+    position: fixed;
+    display: none;
     flex-direction: column;
-    width: 100%;
-    height: auto;
+    width: 97vw;
+    height: 100vh;
+    z-index: 999;
+    overflow-x: hidden;
 }
 
 .btn-voltar {
@@ -27,6 +29,7 @@
     position: relative;
     left: 20px;
     top: 30px;
+    cursor: pointer;
 }
 
 .texto>.nomeProduto {
@@ -49,6 +52,7 @@
     line-height: normal;
     margin-top: 5vw;
     margin-bottom: 5.5vh;
+    margin-left: 1.5rem;
 }
 
 .texto>.info {

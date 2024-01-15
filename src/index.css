@@ -581,6 +581,7 @@ aside > p {
     margin-left: 20px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
   }
   .card-mobile > h1 {
     width: 122.167px;
