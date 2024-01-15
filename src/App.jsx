@@ -30,7 +30,6 @@ const espetosLista = [
     alt: "imagem de um espeto de frango"
   }
 ];
-
 const sobremesaLista = [
   {
     nomeProduto: "Bolo de chocolate",
