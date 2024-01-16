@@ -10,10 +10,10 @@ import TelaMain from './components/TelaMain';
 
 const espetosLista = [
   {
-    nomeProduto: "Espeto de camarão",
+    nomeProduto: "Espeto de Linguiça",
     categoria: "Espeto",
     preco: "8.00",
-    src: "./assets/espetos/img-prato-de-espeto-camarao.png",
+    src: "src/assets/espetos/img-prato-de-espeto-camarao.png",
     alt: "imagem de um espeto de linguiça",
     tamanho: "medio",
     Preparo: "5 minutos",
@@ -100,7 +100,7 @@ function App() {
             <Aside
               title="Espetos"
               alt="icone de espeto"
-              href="./"
+              href="./src/assets/espeto-icon.png"
             />
             <Aside
               title="Sobremesas"
