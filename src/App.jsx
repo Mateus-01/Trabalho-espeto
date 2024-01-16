@@ -132,7 +132,7 @@ function App() {
             <Aside
               title="Sobremesas"
               alt="icone de bolo"
-              href="E:\Mateus\Projetos-react\trabalho-espeto\src\assets\bolo-icon.png"
+              href="..\src\assets\bolo-icon.png"
             />
             <Aside
               title="Bebidas"
