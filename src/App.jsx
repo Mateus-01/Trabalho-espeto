@@ -96,7 +96,7 @@ const bebidasLista = [
     nomeProduto: "Coca-Cola 1L",
     categoria: "bebidas",
     preco: "7.00",
-    src: "/src/assets/bebidas/refri-coca.png",
+    src: "./src/assets/bebidas/refri-coca.png",
     alt: "imagem dea coca-cola",
     tamanho: "Pequeno",
     preparo: "5 minutos",

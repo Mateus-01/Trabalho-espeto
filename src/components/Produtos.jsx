@@ -23,7 +23,7 @@ export default function Produtos(props) {
                 <img className="coroa" src="./src/assets/coroa-dourada.svg" alt="icon coroa"/>
                 <p className="nome-produto">{props.nomeProduto}</p>
                 <p className="preco-mobile">R${props.preco}</p>
-                <img className="img-carne-mobile" src={props.src} alt={props.alt} />
+                <img className="img-carne-mobile" src="../assets/espetos/img-prato-de-espeto-camarao" alt={props.alt} />
                 <div className="qnt-pedido" data-app="product.quantity">
                     <input className="btn-remover" type="button" id="menos" value='-' onClick={() => adicionarAoCarrinho(props.nomeProduto, props.preco)} />
                     <input className="numerador" id="numerador" name="quanti" size="1" type="text" value="0" maxLength="5" />
