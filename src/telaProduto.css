@@ -136,9 +136,20 @@
 }
 
 .grid {
-    display: flex;
     flex: 1;
+    display: flex;
     padding: 0px 0px 0px 3.5vw;
+}
+.tela-produto{
+    display: none;
+    flex-direction: column;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 
 .detalhe-prodt>.texto,

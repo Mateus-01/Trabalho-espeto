@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import TelaProduto from '../TelaProduto';
 
 export default function Produtos(props) {
     const [quantidadeNoCarrinho, setQuantidadeNoCarrinho] = useState(0);
     const [mostrarBotao, setMostrarBotao] = useState(false);
-    const [mostrarTelaProduto, setMostrarTelaProduto] = useState(null);
 
     function adicionarAoCarrinho(nomeProduto, valorUnitario) {
         const novaQuantidade = quantidadeNoCarrinho + 1;
@@ -14,24 +12,15 @@ export default function Produtos(props) {
 
         console.log(`Produto adicionado ao carrinho: ${nomeProduto}, Valor: ${valorUnitario}`);
     }
-
-    function mostrarTela(nomeProduto, preco, tamanho, tempoPreparo, unidades, src, alt) {
-        setMostrarTelaProduto({
-            nomeProduto,
-            preco,
-            tamanho,
-            tempoPreparo,
-            unidades,
-            src,
-            alt
-        });
+    function mostrarTela() {
+        var mostrarTela = document.getElementById(props.id);
+        mostrarTela.style.display = 'flex';
     }
-
     return (
         <div>
             <div className="card-mobile" onClick={() => mostrarTela(props.nomeProduto, props.preco, props.tamanho, props.tempoPreparo, props.unidades, props.src, props.alt)}>
                 <h1>{props.categoria}</h1>
-                <img className="coroa" src="./src/assets/coroa-dourada.svg" alt="icon coroa" />
+                <img className="coroa" src="./src/assets/coroa-dourada.svg" alt="icon coroa"/>
                 <p className="nome-produto">{props.nomeProduto}</p>
                 <p className="preco-mobile">R${props.preco}</p>
                 <img className="img-carne-mobile" src={props.src} alt={props.alt} />
@@ -46,12 +35,6 @@ export default function Produtos(props) {
                     Adicionar ao Carrinho
                 </button>
             )}
-            <TelaProduto
-                mostrar={mostrarTelaProduto !== null}
-                nomeProduto={mostrarTelaProduto?.nomeProduto}
-                preco={mostrarTelaProduto?.preco}
-            /* outros parâmetros */
-            />
         </div>
     );
 }
