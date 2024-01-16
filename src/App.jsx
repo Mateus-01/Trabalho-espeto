@@ -13,7 +13,7 @@ const espetosLista = [
     nomeProduto: "Espeto de camarão",
     categoria: "Espeto",
     preco: "8.00",
-    src: "src\assets\espetos\img-prato-de-espeto-camarao.png",
+    src: "src/assets/espetos/img-prato-de-espeto-camarao.png",
     alt: "imagem de um espeto de linguiça",
     tamanho: "medio",
     Preparo: "5 minutos",
@@ -93,7 +93,6 @@ function App() {
       </div>
 
       <div className='mobile'>
-      <TelaProduto/>
         <Header />
         <main>
           <h3>Categorias</h3>

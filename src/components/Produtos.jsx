@@ -15,7 +15,7 @@ export default function Produtos(props) {
         console.log(`Produto adicionado ao carrinho: ${nomeProduto}, Valor: ${valorUnitario}`);
     }
 
-    function mostrarTela(nomeProduto, preco, tamanho, tempoPreparo, unidades, src, alt){
+    function mostrarTela(nomeProduto, preco, tamanho, tempoPreparo, unidades, src, alt) {
         setMostrarTelaProduto({
             nomeProduto,
             preco,
@@ -50,7 +50,7 @@ export default function Produtos(props) {
                 mostrar={mostrarTelaProduto !== null}
                 nomeProduto={mostrarTelaProduto?.nomeProduto}
                 preco={mostrarTelaProduto?.preco}
-                /* outros parâmetros */
+            /* outros parâmetros */
             />
         </div>
     );
