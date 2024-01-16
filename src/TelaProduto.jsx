@@ -9,11 +9,26 @@ export default function TelaProduto(props){
         esconderTela.style.display = 'none';
     }
     return (
-        <div className='detalhe-prodt' id='telaProduto'>
+        <div id="telaProduto" className="tela-produto" style={{ display: props.mostrar ? 'flex' : 'none' }}>
             <button id='voltar'  class="btn-voltar" onClick={esconderTela}>&lt;</button>
-            <TelaMain />
-            <p class="ingredientes">ingredientes</p>
-            <TelaFooter />
+            <TelaMain
+                nomeProduto={props.nomeProduto}
+                preco={props.preco}
+                tamanho={props.tamanho}
+                tempoPreparo={props.tempoPreparo}
+                unidades={props.unidades}
+                href={props.src}
+                alt={props.alt}
+            />
         </div>
     )
 }
+{/*<button id='voltar'  class="btn-voltar" onClick={esconderTela}>&lt;</button> <div className="tela-produto">
+        <h2>{props.nomeProduto}</h2>
+        <p>Preço: R${props.preco}</p>
+        {/* Adicione outros textos relevantes do card aqui */
+    
+    
+    
+    
+    }

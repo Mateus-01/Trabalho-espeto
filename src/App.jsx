@@ -6,6 +6,7 @@ import Section from './components/Section'
 import Produtos from './components/Produtos'
 import './telaProduto.css'
 import TelaProduto from './TelaProduto'
+import TelaMain from './components/TelaMain';
 
 const espetosLista = [
   {
@@ -13,21 +14,30 @@ const espetosLista = [
     categoria: "Espeto",
     preco: "8.00",
     src: "/src/assets/espetos/img-prato-de-espeto-camarao.png",
-    alt: "imagem de um espeto de linguiça"
+    alt: "imagem de um espeto de linguiça",
+    tamanho: "medio",
+    Preparo: "5 minutos",
+    unidades:"1"
   },
   {
     nomeProduto: "Espeto de carne",
     categoria: "Espeto",
     preco: "8.00",
     src: "/src/assets/espetos/img-prato-de-espeto-carne.png",
-    alt: "imagem de um espeto de carne"
+    alt: "imagem de um espeto de carne",
+    tamanho: "medio",
+    Preparo: "5 minutos",
+    unidades:"1"
   },
   {
     nomeProduto: "Espeto de frango",
     categoria: "Espeto",
     preco: "8.00",
     src: "/src/assets/espetos/img-prato-de-espeto-frango.png",
-    alt: "imagem de um espeto de frango"
+    alt: "imagem de um espeto de frango",
+    tamanho: "medio",
+    Preparo: "5 minutos",
+    unidades:"1"
   }
 ];
 const sobremesaLista = [
@@ -109,11 +119,22 @@ function App() {
             title="Espetos"
           >
             {espetosLista.map(function (item) {
-              return (
-                <Produtos categoria={item.categoria} nomeProduto={item.nomeProduto} preco={item.preco} src={item.src} alt={item.alt} />
-                
-              );
-            })}
+                        return (
+                            <div key={item.nomeProduto}>
+                                <Produtos categoria={item.categoria} nomeProduto={item.nomeProduto} preco={item.preco} src={item.src} alt={item.alt} />
+                                {/* Adicionando o componente TelaMain com as propriedades necessárias */}
+                                <TelaMain
+                                    nomeProduto={item.nomeProduto}
+                                    preco={item.preco}
+                                    tamanho= {item.tamanho}
+                                    tempoPreparo={item.Preparo}
+                                    unidades={item.unidades}
+                                    src={item.src}
+                                    alt={item.alt}
+                                />
+                            </div>
+                        );
+                    })}
           </Section>
 
           <Section
@@ -143,4 +164,6 @@ function App() {
   )
 }
 
+
 export default App
+
