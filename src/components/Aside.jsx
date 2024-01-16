@@ -4,7 +4,7 @@ export default function Aside(props){
         <div className="card-categoria-mobile">
             <img
                 className="img-card-mobile"
-                src={props.src}
+                src={props.href}
                 alt={props.alt}
             />
             <p>{props.title}</p>

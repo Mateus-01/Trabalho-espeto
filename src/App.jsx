@@ -127,12 +127,12 @@ function App() {
             <Aside
               title="Espetos"
               alt="icone de espeto"
-              src="./src/assets/espeto-icon.png"
+              href="./src/assets/espeto-icon.png"
             />
             <Aside
               title="Sobremesas"
               alt="icone de bolo"
-              href="../assets/bolo-icon.png"
+              href="./src/assets/bolo-icon.png"
             />
             <Aside
               title="Bebidas"
