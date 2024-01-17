@@ -18,7 +18,7 @@ const espetosLista = [
     alt: "imagem de um espeto de linguiça",
     tamanho: "medio",
     preparo: "5 minutos",
-    unidades: 1
+    unidades: "1"
   },
   {
     id: "e2",
@@ -29,7 +29,7 @@ const espetosLista = [
     alt: "imagem de um espeto de carne",
     tamanho: "medio",
     preparo: "5 minutos",
-    unidades: 1
+    unidades: "1"
   },
   {
     id: "e3",
