@@ -1,3 +1,4 @@
+import TelaFooter from './TelaFooter'
 export default function TelaMain(props) {
     function esconderTela() {
         var esconderTela = document.getElementById(props.id);
@@ -23,6 +24,7 @@ export default function TelaMain(props) {
                     <img src={props.src} alt={props.alt} />
                 </div>
             </div>
+            <TelaFooter />
         </div>
     )
 }
