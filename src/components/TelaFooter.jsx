@@ -1,8 +1,9 @@
-export default function TelaFooter(props) {
+
+export default function TelaFooter() {
     return (
-        <footer class="box-ingredientes">
-            <div class="card-ingredientes">
-                <img src="imagem_2024-01-13_235200273-removebg-preview.png" alt="" srcset="" />
+        <footer className="box-ingredientes">
+            <div className="card-ingredientes">
+                <img src="./src/assets/ingre-camarao.jpg" alt="" srcset="" />
             </div>
         </footer>
     )

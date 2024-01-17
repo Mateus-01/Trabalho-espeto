@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Section from './components/Section'
 import Produtos from './components/Produtos'
 import './telaProduto.css'
-import TelaProduto from './TelaProduto'
+import TelaFooter from './components/TelaFooter'
 import TelaMain from './components/TelaMain';
 
 const espetosLista = [
