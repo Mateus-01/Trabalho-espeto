@@ -119,7 +119,7 @@ function App() {
     <>
       <div className='desktop'>
       </div>
-      <div className='mobile'>
+      <div className='mobile' id='tela-mobile'>
         <Header />
         <main>
           <h3>Categorias</h3>

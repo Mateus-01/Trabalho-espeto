@@ -13,8 +13,12 @@ export default function Produtos(props) {
         console.log(`Produto adicionado ao carrinho: ${nomeProduto}, Valor: ${valorUnitario}`);
     }
     function mostrarTela() {
+        var scrollOff = document.getElementById('tela-mobile');
         var mostrarTela = document.getElementById(props.id);
+
         mostrarTela.style.display = 'flex';
+        scrollOff.style.overflow = 'hidden';
+        scrollOff.style.height = '100vh';
 
     }
     

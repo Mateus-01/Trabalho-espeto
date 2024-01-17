@@ -2,7 +2,11 @@ import TelaFooter from './TelaFooter'
 import '../telaProduto.css' 
 export default function TelaMain(props) {
     function esconderTela() {
+        var scrollOff = document.getElementById('tela-mobile');
         var esconderTela = document.getElementById(props.id);
+
+        scrollOff.style.overflow = 'none';
+        scrollOff.style.height = 'auto';
         esconderTela.style.display = 'none';
     }
     return (
