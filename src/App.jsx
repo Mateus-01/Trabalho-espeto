@@ -132,8 +132,7 @@ function App() {
             <Aside
               title="Sobremesas"
               alt="icone de bolo"
-              href="Trabalho-espeto/src/assets
-              /bolo-icon.png"
+              href="Trabalho-espeto/src/assets/bolo-icon.png"
             />
             <Aside
               title="Bebidas"
