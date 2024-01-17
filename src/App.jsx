@@ -132,12 +132,12 @@ function App() {
             <Aside
               title="Sobremesas"
               alt="icone de bolo"
-              href="Trabalho-espeto/src/assets/bolo-icon.png"
+              href="src/assets/bolo-icon.png"
             />
             <Aside
               title="Bebidas"
               alt="icone de refrigerante"
-              href="./src/assets/refrigerante-icon.png"
+              href="src/assets/refrigerante-icon.png"
             />
           </div>
           <Section
