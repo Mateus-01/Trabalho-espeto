@@ -18,7 +18,7 @@ const espetosLista = [
     alt: "imagem de um espeto de linguiça",
     tamanho: "medio",
     preparo: "5 minutos",
-    unidades: 1
+    unidades: "1"
   },
   {
     id: "e2",
@@ -29,7 +29,7 @@ const espetosLista = [
     alt: "imagem de um espeto de carne",
     tamanho: "medio",
     preparo: "5 minutos",
-    unidades: 1
+    unidades: "1"
   },
   {
     id: "e3",
@@ -96,7 +96,7 @@ const bebidasLista = [
     nomeProduto: "Coca-Cola 1L",
     categoria: "bebidas",
     preco: "7.00",
-    src: "./src/assets/bebidas/refri-coca.png",
+    src: "src/assets/bebidas/refri-coca.png",
     alt: "imagem dea coca-cola",
     tamanho: "Pequeno",
     preparo: "5 minutos",
@@ -106,7 +106,7 @@ const bebidasLista = [
     nomeProduto: "Pepsi 1.5L",
     categoria: "bebidas",
     preco: "8.00",
-    src: "/src/assets/bebidas/refri-pepsi.png",
+    src: "src/assets/bebidas/refri-pepsi.png",
     alt: "imagem de uma pepsi",
     tamanho: "Médio",
     preparo: "5 minutos",
