@@ -99,14 +99,13 @@
 
 .detalhe-prodt>.box-ingredientes {
     height: 15vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color: transparent transparent;
-    padding: 0px 20px;
 }
 
 .box-ingredientes::-webkit-scrollbar {
@@ -126,7 +125,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 3.5vw;
     width: 22vw;
     height: 9vh;
     border-radius: 2vw;
