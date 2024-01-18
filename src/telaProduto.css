@@ -98,7 +98,6 @@
 }
 .box-ingredientes {
     gap: 4vw;
-    background-color: red;
     width: 90vw;
     display: flex;
     align-items: center;
@@ -106,7 +105,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color: transparent transparent;
-    padding: 1rem 1.5rem 0px 1rem;
+    padding: 1rem 1.5rem 20px 1rem;
 }
 
 .box-ingredientes::-webkit-scrollbar {
@@ -181,12 +180,13 @@
 .ingredientes {
     color: #000;
     font-family: Montserrat;
-    font-size: 3vw;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-left: 3.5vw;
-    margin-top: 1vh;
+    margin-top: -2vh;
+    z-index: 3;
 }
 
 @media only screen and (min-width: 680px) {
