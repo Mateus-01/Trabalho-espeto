@@ -96,20 +96,21 @@
     margin-left: 3.5vw;
     margin-top: -1vh;
 }
-
-.detalhe-prodt>.box-ingredientes {
-    height: 15vh;
-    width: 100vw;
+.box-ingredientes {
+    gap: 4vw;
+    background-color: red;
+    width: 90vw;
     display: flex;
     align-items: center;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color: transparent transparent;
+    padding: 1rem 1.5rem 0px 1rem;
 }
 
 .box-ingredientes::-webkit-scrollbar {
-    width: 1px;
+    width: 100px;
 }
 
 .box-ingredientes::-webkit-scrollbar-thumb {
@@ -121,19 +122,17 @@
 }
 
 .box-ingredientes>.card-ingredientes {
-    padding: 5px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 22vw;
-    height: 9vh;
-    border-radius: 2vw;
+    border-radius: 3vw;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px 3px rgba(173, 173, 173, 0.67);
 }
 
 .card-ingredientes>img {
-    width: 12vw;
+    width: 3em;
 }
 
 .grid {
