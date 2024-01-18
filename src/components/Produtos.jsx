@@ -19,7 +19,6 @@ export default function Produtos(props) {
         mostrarTela.style.display = 'flex';
         scrollOff.style.overflow = 'hidden';
         scrollOff.style.height = '100vh';
-
     }
     
     return (
