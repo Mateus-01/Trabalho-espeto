@@ -1,5 +1,5 @@
 import TelaFooter from './TelaFooter'
-import '../telaProduto.css' 
+import '../telaProduto.css'
 export default function TelaMain(props) {
     function esconderTela() {
         var scrollOff = document.getElementById('tela-mobile');
@@ -32,7 +32,9 @@ export default function TelaMain(props) {
                 </div>
                 <p className='ingredientes'>Ingredientes</p>
             </div>
-            <TelaFooter  />
+            <TelaFooter
+                ingredientes={props.ingredientes}
+            />
         </div>
     )
 }

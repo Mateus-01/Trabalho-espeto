@@ -5,7 +5,6 @@ import Header from './components/Header'
 import Section from './components/Section'
 import Produtos from './components/Produtos'
 import './telaProduto.css'
-import TelaFooter from './components/TelaFooter'
 import TelaMain from './components/TelaMain';
 
 const espetosLista = [
@@ -18,7 +17,17 @@ const espetosLista = [
     alt: "imagem de um espeto de linguiça",
     tamanho: "medio",
     preparo: "5 minutos",
-    unidades: "1"
+    unidades: "1",
+    ingredientes: [
+      {
+        src: "src/assets/espetos/ingre-camarao.png",
+        alt: "camarao",
+      },
+      {
+        src: "src/assets/espetos/img-prato-de-espeto-carne.png",
+        alt: "espeto",
+      }
+    ]
   },
   {
     id: "e2",
@@ -29,7 +38,13 @@ const espetosLista = [
     alt: "imagem de um espeto de carne",
     tamanho: "medio",
     preparo: "5 minutos",
-    unidades: "1"
+    unidades: "1",
+    ingredientes: [
+      {
+        src: "src/assets/espetos/ingre-carne.png",
+        alt: "carne",
+      }
+    ]
   },
   {
     id: "e3",
@@ -40,7 +55,17 @@ const espetosLista = [
     alt: "imagem de um espeto de frango",
     tamanho: "medio",
     preparo: "5 minutos",
-    unidades: 1
+    unidades: 1,
+    ingredientes: [
+      {
+        src: "src/assets/espetos/ingre-frango.png",
+        alt: "sla",
+      },
+      {
+        src: "src/assets/espetos/img-prato-de-espeto-carne.png",
+        alt: "sla2",
+      }
+    ]
   }
 ];
 const sobremesaLista = [
@@ -53,10 +78,40 @@ const sobremesaLista = [
     alt: "imagem de um bolo de chocolate",
     tamanho: "pequeno",
     preparo: "5 minutos",
-    unidades: 1
+    unidades: 1,
+    ingredientes: [
+      {
+        src: "src/assets/sobremesas/ingre-farinha.png",
+        alt: "sla",
+      },
+      {
+        src: "src/assets/sobremesas/ingre-acucar.png",
+        alt: "sla2",
+      },
+      {
+        src: "src/assets/sobremesas/ingre-cacau.png",
+        alt: "sla2",
+      },
+      {
+        src: "src/assets/sobremesas/ingre-fermento.png",
+        alt: "sla2",
+      },
+      {
+        src: "src/assets/sobremesas/ingre-ovo.png",
+        alt: "sla2",
+      },
+      {
+        src: "src/assets/sobremesas/ingre-manteiga.png",
+        alt: "sla2",
+      },
+      {
+        src: "src/assets/sobremesas/ingre-leite.png",
+        alt: "sla2",
+      },
+    ]
   },
   {
-    id:"s2",
+    id: "s2",
     nomeProduto: "Pudim de leite",
     categoria: "Sobremesas",
     preco: "12.00",
@@ -64,7 +119,17 @@ const sobremesaLista = [
     alt: "imagem de um pudim",
     tamanho: "pequeno",
     preparo: "5 minutos",
-    unidades: 1
+    unidades: 1,
+    ingredientes: [
+      {
+        src: "src/assets/espetos/ingre-frango.png",
+        alt: "sla",
+      },
+      {
+        src: "src/assets/espetos/img-prato-de-espeto-carne.png",
+        alt: "sla2",
+      }
+    ]
   },
   {
     id: "s3",
@@ -75,7 +140,17 @@ const sobremesaLista = [
     alt: "imagem de um cone trufado",
     tamanho: "pequeno",
     preparo: "5 minutos",
-    unidades: 1
+    unidades: 1,
+    ingredientes: [
+      {
+        src: "src/assets/espetos/ingre-frango.png",
+        alt: "sla",
+      },
+      {
+        src: "src/assets/espetos/img-prato-de-espeto-carne.png",
+        alt: "sla2",
+      }
+    ]
   }
 ];
 
@@ -164,6 +239,7 @@ function App() {
                     unidades={item.unidades}
                     src={item.src}
                     alt={item.alt}
+                    ingredientes={item.ingredientes}
                   />
                 </div>
               );
@@ -194,6 +270,7 @@ function App() {
                     unidades={item.unidades}
                     src={item.src}
                     alt={item.alt}
+                    ingredientes={item.ingredientes}
                   />
                 </div>
               );
@@ -224,6 +301,7 @@ function App() {
                     unidades={item.unidades}
                     src={item.src}
                     alt={item.alt}
+                    ingredientes={item.ingredientes}
                   />
                 </div>
               );

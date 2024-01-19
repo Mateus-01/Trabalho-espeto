@@ -1,28 +1,11 @@
-
-export default function TelaFooter() {
+export default function TelaFooter(props) {
     return (
-        <footer className="box-ingredientes">
-            <div className="card-ingredientes">
-                <img src="./src/assets/ingre-camarao.jpg" alt="" srcset="" />
-            </div>
-            <div className="card-ingredientes">
-                <img src="./src/assets/ingre-camarao.jpg" alt="" srcset="" />
-            </div>
-            <div className="card-ingredientes">
-                <img src="./src/assets/ingre-camarao.jpg" alt="" srcset="" />
-            </div>
-            <div className="card-ingredientes">
-                <img src="./src/assets/ingre-camarao.jpg" alt="" srcset="" />
-            </div>
-            <div className="card-ingredientes">
-                <img src="./src/assets/ingre-camarao.jpg" alt="" srcset="" />
-            </div>
-            <div className="card-ingredientes">
-                <img src="./src/assets/ingre-camarao.jpg" alt="" srcset="" />
-            </div>
-            <div className="card-ingredientes">
-                <img src="./src/assets/ingre-camarao.jpg" alt="" srcset="" />
-            </div>
-        </footer>
-    )
-}
+      <footer className="box-ingredientes">
+        {props.ingredientes && props.ingredientes.map((ingrediente, index) => (
+          <div key={index} className="card-ingredientes">
+            <img src={ingrediente.src} alt={ingrediente.alt} />
+          </div>
+        ))}
+      </footer>
+    );
+  }
