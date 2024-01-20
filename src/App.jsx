@@ -5,7 +5,8 @@ import Header from './components/Header'
 import Section from './components/Section'
 import Produtos from './components/Produtos'
 import './telaProduto.css'
-import TelaMain from './components/TelaMain';
+import TelaMain from './components/TelaMain'
+import EspetoIcon from "./assets/espeto-icon.png"
 
 const espetosLista = [
   {
@@ -202,7 +203,7 @@ function App() {
             <Aside
               title="Espetinhos"
               alt="icone de espeto"
-              href="espeto-icon.png"
+              href={EspetoIcon}
             />
             <Aside
               title="Sobremesas"
