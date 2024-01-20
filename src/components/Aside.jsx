@@ -1,10 +1,10 @@
 
-export default function Aside(props){
-    return(
+export default function Aside(props) {
+    return (
         <div className="card-categoria-mobile">
             <img
                 className="img-card-mobile"
-                src={process.env.PUBLIC_URL + props.href}
+                src={process.env.PUBLIC_URL + '/assets/' + props.href}
                 alt={props.alt}
             />
             <p>{props.title}</p>

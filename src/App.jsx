@@ -200,9 +200,9 @@ function App() {
           <h3>Categorias</h3>
           <div className='categorias-mobile'>
             <Aside
-              title="Espetos"
+              title="Espetinhos"
               alt="icone de espeto"
-              href="../assets/espeto-icon.png"
+              href="espeto-icon.png"
             />
             <Aside
               title="Sobremesas"
