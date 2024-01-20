@@ -1,4 +1,3 @@
-
 export default function Aside(props) {
     return (
         <div className="card-categoria-mobile">
