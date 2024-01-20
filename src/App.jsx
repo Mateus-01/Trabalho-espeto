@@ -202,7 +202,7 @@ function App() {
             <Aside
               title="Espetos"
               alt="icone de espeto"
-              href="./src/assets/espeto-icon.png"
+              href="../assets/espeto-icon.png"
             />
             <Aside
               title="Sobremesas"
