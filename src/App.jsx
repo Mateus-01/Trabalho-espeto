@@ -19,9 +19,9 @@ import sobreBoloChoco from "./assets/sobremesas/bolo-chocolate-mobile.png"
 import sobrePudim from "./assets/sobremesas/pudim-mobile.png"
 import sobreCone from "./assets/sobremesas/cone-trufado-mobile.png"
 
-import bebidaCoca from "./assets/bebidas/reri-coca.png"
-import bebidaFanta from "./assets/bebidas/reri-fanta.png"
-import bebidaPepsi from "./assets/bebidas/reri-pepsi.png"
+import bebidaCoca from "./assets/bebidas/refri-coca.png"
+import bebidaFanta from "./assets/bebidas/refri-fanta.png"
+import bebidaPepsi from "./assets/bebidas/refri-pepsi.png"
 
 const espetosLista = [
   {

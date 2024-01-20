@@ -252,7 +252,7 @@ aside > p {
   font-weight: 700;
   transform: translate(10px, 15px);
   background: -webkit-linear-gradient(left, #eeb61b 22%, #2e2e2e 0%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .preco {
@@ -395,7 +395,7 @@ aside > p {
   footer > p {
     font-size: 300em;
     background: -webkit-linear-gradient(left, #eeb61b 22%, #2e2e2e 0%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .sec-sob {
@@ -732,7 +732,7 @@ aside > p {
     background-color: transparent;
     left: 7px;
     outline-style: inherit;
-    -moz-appearance: textfield;
+    appearance: textfield;
   }
   .btn-adicionar {
     height: 100%;
