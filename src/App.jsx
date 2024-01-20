@@ -12,6 +12,16 @@ import boloIcon from "./assets/bolo-icon.png"
 import refriIcon from "./assets/refrigerante-icon.png"
 
 import espetoCamarao from "./assets/espetos/img-prato-de-espeto-camarao.png"
+import espetoCarne from "./assets/espetos/img-prato-de-espeto-carne.png"
+import espetoFrango from "./assets/espetos/img-prato-de-espeto-frango.png"
+
+import sobreBoloChoco from "./assets/sobremesas/bolo-chocolate-mobile.png"
+import sobrePudim from "./assets/sobremesas/pudim-mobile.png"
+import sobreCone from "./assets/sobremesas/cone-trufado-mobile.png"
+
+import bebidaCoca from "./assets/bebidas/reri-coca.png"
+import bebidaFanta from "./assets/bebidas/reri-fanta.png"
+import bebidaPepsi from "./assets/bebidas/reri-pepsi.png"
 
 const espetosLista = [
   {
@@ -40,7 +50,7 @@ const espetosLista = [
     nomeProduto: "Espeto de carne",
     categoria: "Espeto",
     preco: "8.00",
-    src: "/src/assets/espetos/img-prato-de-espeto-carne.png",
+    src: espetoCarne,
     alt: "imagem de um espeto de carne",
     tamanho: "medio",
     preparo: "5 minutos",
@@ -57,7 +67,7 @@ const espetosLista = [
     nomeProduto: "Espeto de frango",
     categoria: "Espeto",
     preco: "8.00",
-    src: "/src/assets/espetos/img-prato-de-espeto-frango.png",
+    src: espetoFrango,
     alt: "imagem de um espeto de frango",
     tamanho: "medio",
     preparo: "5 minutos",
@@ -80,7 +90,7 @@ const sobremesaLista = [
     nomeProduto: "Bolo de chocolate",
     categoria: "Sobremesas",
     preco: "7.00",
-    src: "/src/assets/sobremesas/bolo-chocolate-mobile.png",
+    src: sobreBoloChoco,
     alt: "imagem de um bolo de chocolate",
     tamanho: "pequeno",
     preparo: "5 minutos",
@@ -121,7 +131,7 @@ const sobremesaLista = [
     nomeProduto: "Pudim de leite",
     categoria: "Sobremesas",
     preco: "12.00",
-    src: "src/assets/sobremesas/pudim-mobile.png",
+    src: sobrePudim,
     alt: "imagem de um pudim",
     tamanho: "pequeno",
     preparo: "5 minutos",
@@ -142,7 +152,7 @@ const sobremesaLista = [
     nomeProduto: "Cone trufado",
     categoria: "Sobremesas",
     preco: "10.00",
-    src: "src/assets/sobremesas/cone-trufado-mobile.png",
+    src: sobreCone,
     alt: "imagem de um cone trufado",
     tamanho: "pequeno",
     preparo: "5 minutos",
@@ -166,7 +176,7 @@ const bebidasLista = [
     nomeProduto: "Fanta 2L",
     categoria: "bebidas",
     preco: "7.50",
-    src: "src/assets/bebidas/refri-fanta.png",
+    src: bebidaFanta,
     alt: "imagem de uma fanta",
     tamanho: "Medio",
     preparo: "5 minutos",
@@ -177,7 +187,7 @@ const bebidasLista = [
     nomeProduto: "Coca-Cola 1L",
     categoria: "bebidas",
     preco: "7.00",
-    src: "src/assets/bebidas/refri-coca.png",
+    src: bebidaCoca,
     alt: "imagem dea coca-cola",
     tamanho: "Pequeno",
     preparo: "5 minutos",
@@ -187,7 +197,7 @@ const bebidasLista = [
     nomeProduto: "Pepsi 1.5L",
     categoria: "bebidas",
     preco: "8.00",
-    src: "src/assets/bebidas/refri-pepsi.png",
+    src: bebidaPepsi,
     alt: "imagem de uma pepsi",
     tamanho: "Médio",
     preparo: "5 minutos",
