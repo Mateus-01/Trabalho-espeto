@@ -6,7 +6,6 @@ import Section from './components/Section'
 import Produtos from './components/Produtos'
 import './telaProduto.css'
 import TelaMain from './components/TelaMain'
-import EspetoIcon from "../assets/espeto-icon.png"
 
 const espetosLista = [
   {
