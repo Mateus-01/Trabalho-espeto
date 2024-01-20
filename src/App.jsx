@@ -11,13 +11,15 @@ import espetoIcon from "./assets/espeto-icon.png"
 import boloIcon from "./assets/bolo-icon.png"
 import refriIcon from "./assets/refrigerante-icon.png"
 
+import espetoCamarao from "./assets/espetos/img-prato-de-espeto-camarao.png"
+
 const espetosLista = [
   {
     id: "e1",
     nomeProduto: "Espeto de camarão",
     categoria: "Espeto",
     preco: "8.00",
-    src: "src/assets/espetos/img-prato-de-espeto-camarao.png",
+    src: {espetoCamarao},
     alt: "imagem de um espeto de linguiça",
     tamanho: "medio",
     preparo: "5 minutos",
