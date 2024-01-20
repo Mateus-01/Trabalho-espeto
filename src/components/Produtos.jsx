@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import coroaIcon from '../assets/coroa-dourada.svg'
 
 export default function Produtos(props) {
     const [quantidadeNoCarrinho, setQuantidadeNoCarrinho] = useState(0);
@@ -25,7 +26,7 @@ export default function Produtos(props) {
         <div>
             <div className="card-mobile" >
                 <h1>{props.categoria}</h1>
-                <img className="coroa"  src="./src/assets/coroa-dourada.svg" alt="icon coroa"/>
+                <img className="coroa"  src={coroaIcon} alt="icon coroa"/>
                 <p className="nome-produto" onClick={() => mostrarTela(props.nomeProduto, props.preco, props.tamanho, props.tempoPreparo, props.unidades, props.src, props.alt)}>{props.nomeProduto}</p>
                 <p className="preco-mobile">R${props.preco}</p>
                 <img className="img-carne-mobile" onClick={() => mostrarTela(props.nomeProduto, props.preco, props.tamanho, props.tempoPreparo, props.unidades, props.src, props.alt)} src={props.src} alt={props.alt} />
