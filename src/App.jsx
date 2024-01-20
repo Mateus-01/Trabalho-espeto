@@ -12,8 +12,13 @@ import boloIcon from "./assets/bolo-icon.png"
 import refriIcon from "./assets/refrigerante-icon.png"
 
 import espetoCamarao from "./assets/espetos/img-prato-de-espeto-camarao.png"
+import ingreCamarao from "./assets/espetos/ingre-camarao.png"
+
 import espetoCarne from "./assets/espetos/img-prato-de-espeto-carne.png"
+import ingreCarne from "./assets/espetos/ingre-carne.png"
+
 import espetoFrango from "./assets/espetos/img-prato-de-espeto-frango.png"
+import ingreFrango from "./assets/espetos/ingre-frango.png"
 
 import sobreBoloChoco from "./assets/sobremesas/bolo-chocolate-mobile.png"
 import sobrePudim from "./assets/sobremesas/pudim-mobile.png"
@@ -36,12 +41,8 @@ const espetosLista = [
     unidades: "1",
     ingredientes: [
       {
-        src: "src/assets/espetos/ingre-camarao.png",
+        src: ingreCamarao,
         alt: "camarao",
-      },
-      {
-        src: "src/assets/espetos/img-prato-de-espeto-carne.png",
-        alt: "espeto",
       }
     ]
   },
@@ -57,7 +58,7 @@ const espetosLista = [
     unidades: "1",
     ingredientes: [
       {
-        src: "src/assets/espetos/ingre-carne.png",
+        src: ingreCarne,
         alt: "carne",
       }
     ]
@@ -74,12 +75,8 @@ const espetosLista = [
     unidades: 1,
     ingredientes: [
       {
-        src: "src/assets/espetos/ingre-frango.png",
+        src: ingreFrango,
         alt: "sla",
-      },
-      {
-        src: "src/assets/espetos/img-prato-de-espeto-carne.png",
-        alt: "sla2",
       }
     ]
   }
