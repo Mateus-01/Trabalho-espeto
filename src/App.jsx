@@ -19,7 +19,7 @@ const espetosLista = [
     nomeProduto: "Espeto de camarão",
     categoria: "Espeto",
     preco: "8.00",
-    src: '{espetoCamarao}',
+    src: espetoCamarao,
     alt: "imagem de um espeto de camarao",
     tamanho: "medio",
     preparo: "5 minutos",
