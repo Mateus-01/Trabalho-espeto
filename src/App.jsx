@@ -6,9 +6,10 @@ import Section from './components/Section'
 import Produtos from './components/Produtos'
 import './telaProduto.css'
 import TelaMain from './components/TelaMain'
+
 import espetoIcon from "./assets/espeto-icon.png"
 import boloIcon from "./assets/bolo-icon.png"
-import refriIcon from "./assets/refrigeante-icon.png"
+import refriIcon from "./assets/refrigerante-icon.png"
 
 const espetosLista = [
   {
@@ -203,7 +204,7 @@ function App() {
           <h3>Categorias</h3>
           <div className='categorias-mobile'>
             <Aside
-              title="Espetinhos"
+              title="Espetos"
               alt="icone de espeto"
               href={espetoIcon}
             />
