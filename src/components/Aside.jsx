@@ -1,4 +1,5 @@
 
+import EspetoIcon from "../assets/espeto-icon.png"
 export default function Aside(props) {
     return (
         <div className="card-categoria-mobile">
