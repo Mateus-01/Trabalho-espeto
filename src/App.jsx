@@ -1,24 +1,25 @@
 import { useState } from 'react'
+//CSS das telas
+import './telaProduto.css'
 import './index.css'
+
+
+//componentes
 import Aside from './components/Aside'
 import Header from './components/Header'
 import Section from './components/Section'
 import Produtos from './components/Produtos'
-import './telaProduto.css'
 import TelaMain from './components/TelaMain'
 
+
+//imagem dos produtos
 import espetoIcon from "./assets/espeto-icon.png"
 import boloIcon from "./assets/bolo-icon.png"
 import refriIcon from "./assets/refrigerante-icon.png"
 
 import espetoCamarao from "./assets/espetos/img-prato-de-espeto-camarao.png"
-import ingreCamarao from "./assets/espetos/ingre-camarao.png"
-
 import espetoCarne from "./assets/espetos/img-prato-de-espeto-carne.png"
-import ingreCarne from "./assets/espetos/ingre-carne.png"
-
 import espetoFrango from "./assets/espetos/img-prato-de-espeto-frango.png"
-import ingreFrango from "./assets/espetos/ingre-frango.png"
 
 import sobreBoloChoco from "./assets/sobremesas/bolo-chocolate-mobile.png"
 import sobrePudim from "./assets/sobremesas/pudim-mobile.png"
@@ -27,6 +28,28 @@ import sobreCone from "./assets/sobremesas/cone-trufado-mobile.png"
 import bebidaCoca from "./assets/bebidas/refri-coca.png"
 import bebidaFanta from "./assets/bebidas/refri-fanta.png"
 import bebidaPepsi from "./assets/bebidas/refri-pepsi.png"
+
+
+//ingredientes
+import ingreAcucar from "./assets/ingredientes/ingre-acucar.png"
+import ingreCacau from "./assets/ingredientes/ingre-cacau.png"
+import ingreFarinha from "./assets/ingredientes/ingre-farinha.png"
+import ingreFermento from "./assets/ingredientes/ingre-fermento.png"
+import ingreLeite from "./assets/ingredientes/ingre-leite.png"
+import ingreManteiga from "./assets/ingredientes/ingre-manteiga.png"
+import ingreOvo from "./assets/ingredientes/ingre-ovo.png"
+import ingreLeiteCondensado from "./assets/ingredientes/ingre-leite-condensado.png"
+import ingreTrufa from "./assets/ingredientes/ingre-trufa.png"
+import ingreCremeLeite from "./assets/ingredientes/ingre-creme-leite.png"
+import ingreCasquinha from "./assets/ingredientes/ingre-casquinha.png"
+import ingreChocolateAmargo from "./assets/ingredientes/ingre-chocolate-amargo.png"
+import ingreGranulado from "./assets/ingredientes/ingre-granulado.png"
+
+
+import ingreFrango from "./assets/ingredientes/ingre-frango.png"
+import ingreCarne from "./assets/ingredientes/ingre-carne.png"
+import ingreCamarao from "./assets/ingredientes/ingre-camarao.png"
+
 
 const espetosLista = [
   {
@@ -94,32 +117,32 @@ const sobremesaLista = [
     unidades: 1,
     ingredientes: [
       {
-        src: "src/assets/sobremesas/ingre-farinha.png",
-        alt: "sla",
+        src: ingreFarinha,
+        alt: "Farinha",
       },
       {
-        src: "src/assets/sobremesas/ingre-acucar.png",
-        alt: "sla2",
+        src: ingreAcucar,
+        alt: "Açucar",
       },
       {
-        src: "src/assets/sobremesas/ingre-cacau.png",
-        alt: "sla2",
+        src: ingreCacau,
+        alt: "Cacau",
       },
       {
-        src: "src/assets/sobremesas/ingre-fermento.png",
-        alt: "sla2",
+        src: ingreFermento,
+        alt: "Fermento",
       },
       {
-        src: "src/assets/sobremesas/ingre-ovo.png",
-        alt: "sla2",
+        src: ingreOvo,
+        alt: "Ovo",
       },
       {
-        src: "src/assets/sobremesas/ingre-manteiga.png",
-        alt: "sla2",
+        src: ingreManteiga,
+        alt: "Manteiga",
       },
       {
-        src: "src/assets/sobremesas/ingre-leite.png",
-        alt: "sla2",
+        src: ingreLeite,
+        alt: "Leite",
       },
     ]
   },
@@ -135,12 +158,20 @@ const sobremesaLista = [
     unidades: 1,
     ingredientes: [
       {
-        src: "src/assets/espetos/ingre-frango.png",
-        alt: "sla",
+        src: ingreLeite,
+        alt: "Leite",
       },
       {
-        src: "src/assets/espetos/img-prato-de-espeto-carne.png",
-        alt: "sla2",
+        src: ingreOvo,
+        alt: "Ovo",
+      },
+      {
+        src: ingreAcucar,
+        alt: "Açucar",
+      },
+      {
+        src: ingreLeiteCondensado,
+        alt: "Leite condensado",
       }
     ]
   },
@@ -156,12 +187,28 @@ const sobremesaLista = [
     unidades: 1,
     ingredientes: [
       {
-        src: "src/assets/espetos/ingre-frango.png",
-        alt: "sla",
+        src: ingreCasquinha,
+        alt: "Casquinha de sorvete",
       },
       {
-        src: "src/assets/espetos/img-prato-de-espeto-carne.png",
-        alt: "sla2",
+        src: ingreChocolateAmargo,
+        alt: "Chocolate meio amargo",
+      },
+      {
+        src: ingreManteiga,
+        alt: "Manteiga",
+      },
+      {
+        src: ingreTrufa,
+        alt: "Trufa",
+      },
+      {
+        src: ingreGranulado,
+        alt: "Granulado de chocolate",
+      },
+      {
+        src: ingreCremeLeite,
+        alt: "Creme de leite",
       }
     ]
   }
