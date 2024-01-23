@@ -6,6 +6,23 @@ body {
   background-color: hsl(0, 0%, 96%);
   
 }
+.btn-finalizar{
+  background-color: #F5CA48;
+  border: none;
+  width: 80vw;
+  padding: 3vw 0px;
+  border-radius: 10vw;
+  font-size: 3.5vw;
+  position: fixed;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: poppins;
+  font-weight: 500;
+  z-index: 900;
+
+
+}
 header {
   background: #f5ca48;
   width: 100%;

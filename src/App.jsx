@@ -250,127 +250,119 @@ const bebidasLista = [
 ];
 
 function App() {
+  const [quantidadePedido, setQuantidadePedido] = useState(0);
+
+  function finalizarPedido() {
+      console.log('Pedido finalizado para todos os produtos!');
+      // Lógica adicional para finalizar o pedido
+      setQuantidadePedido(0); // Reseta a quantidade de peadidos
+  }
   return (
     <>
-      <div className='desktop'>
-      </div>
+      <div className='desktop'></div>
       <div className='mobile' id='tela-mobile'>
         <Header />
         <main>
           <h3>Categorias</h3>
           <div className='categorias-mobile'>
-            <Aside
-              title="Espetos"
-              alt="icone de espeto"
-              href={espetoIcon}
-            />
-            <Aside
-              title="Sobremesas"
-              alt="icone de bolo"
-              href={boloIcon}
-            />
-            <Aside
-              title="Bebidas"
-              alt="icone de refrigerante"
-              href={refriIcon}
-            />
+            <Aside title="Espetos" alt="icone de espeto" href={espetoIcon} />
+            <Aside title="Sobremesas" alt="icone de bolo" href={boloIcon} />
+            <Aside title="Bebidas" alt="icone de refrigerante" href={refriIcon} />
           </div>
-          <Section
-            title="Espetos"
-          >
-            {espetosLista.map(function (item) {
-              return (
-                <div key={item.nomeProduto}>
-                  <Produtos
-                    id={item.id}
-                    categoria={item.categoria}
-                    nomeProduto={item.nomeProduto}
-                    preco={item.preco}
-                    src={item.src}
-                    alt={item.alt}
-                  />
-                  {/* Adicionando o componente TelaMain com as propriedades necessárias */}
-                  <TelaMain
-                    id={item.id}
-                    nomeProduto={item.nomeProduto}
-                    preco={item.preco}
-                    tamanho={item.tamanho}
-                    tempoPreparo={item.preparo}
-                    unidades={item.unidades}
-                    src={item.src}
-                    alt={item.alt}
-                    ingredientes={item.ingredientes}
-                  />
-                </div>
-              );
-            })}
+
+          <Section title="Espetos">
+            {espetosLista.map(item => (
+              <div key={item.id}>
+                <Produtos
+                  id={item.id}
+                  categoria={item.categoria}
+                  nomeProduto={item.nomeProduto}
+                  preco={item.preco}
+                  src={item.src}
+                  alt={item.alt}
+                  quantidadePedido={quantidadePedido}
+                  setQuantidadePedido={setQuantidadePedido}
+                />
+                <TelaMain
+                  id={item.id}
+                  nomeProduto={item.nomeProduto}
+                  preco={item.preco}
+                  tamanho={item.tamanho}
+                  tempoPreparo={item.preparo}
+                  unidades={item.unidades}
+                  src={item.src}
+                  alt={item.alt}
+                  ingredientes={item.ingredientes}
+                />
+              </div>
+            ))}
           </Section>
 
-          <Section
-            title="Sobremesas"
-          >
-            {sobremesaLista.map(function (item) {
-              return (
-                <div key={item.nomeProduto}>
-                  <Produtos
-                    id={item.id}
-                    categoria={item.categoria}
-                    nomeProduto={item.nomeProduto}
-                    preco={item.preco}
-                    src={item.src}
-                    alt={item.alt}
-                  />
-                  {/* Adicionando o componente TelaMain com as propriedades necessárias */}
-                  <TelaMain
-                    id={item.id}
-                    nomeProduto={item.nomeProduto}
-                    preco={item.preco}
-                    tamanho={item.tamanho}
-                    tempoPreparo={item.preparo}
-                    unidades={item.unidades}
-                    src={item.src}
-                    alt={item.alt}
-                    ingredientes={item.ingredientes}
-                  />
-                </div>
-              );
-            })}
+          <Section title="Sobremesas">
+            {sobremesaLista.map(item => (
+              <div key={item.id}>
+                <Produtos
+                  id={item.id}
+                  categoria={item.categoria}
+                  nomeProduto={item.nomeProduto}
+                  preco={item.preco}
+                  src={item.src}
+                  alt={item.alt}
+                  quantidadePedido={quantidadePedido}
+                  setQuantidadePedido={setQuantidadePedido}
+                />
+                <TelaMain
+                  id={item.id}
+                  nomeProduto={item.nomeProduto}
+                  preco={item.preco}
+                  tamanho={item.tamanho}
+                  tempoPreparo={item.preparo}
+                  unidades={item.unidades}
+                  src={item.src}
+                  alt={item.alt}
+                  ingredientes={item.ingredientes}
+                />
+              </div>
+            ))}
           </Section>
 
-          <Section
-            title="Bebidas"
-          >
-            {bebidasLista.map(function (item) {
-              return (
-                <div key={item.nomeProduto}>
-                  <Produtos
-                    id={item.id}
-                    categoria={item.categoria}
-                    nomeProduto={item.nomeProduto}
-                    preco={item.preco}
-                    src={item.src}
-                    alt={item.alt}
-                  />
-                  {/* Adicionando o componente TelaMain com as propriedades necessárias */}
-                  <TelaMain
-                    id={item.id}
-                    nomeProduto={item.nomeProduto}
-                    preco={item.preco}
-                    tamanho={item.tamanho}
-                    tempoPreparo={item.preparo}
-                    unidades={item.unidades}
-                    src={item.src}
-                    alt={item.alt}
-                    ingredientes={item.ingredientes}
-                  />
-                </div>
-              );
-            })}
+          <Section title="Bebidas">
+            {bebidasLista.map(item => (
+              <div key={item.id}>
+                <Produtos
+                  id={item.id}
+                  categoria={item.categoria}
+                  nomeProduto={item.nomeProduto}
+                  preco={item.preco}
+                  src={item.src}
+                  alt={item.alt}
+                  quantidadePedido={quantidadePedido}
+                  setQuantidadePedido={setQuantidadePedido}
+                />
+                <TelaMain
+                  id={item.id}
+                  nomeProduto={item.nomeProduto}
+                  preco={item.preco}
+                  tamanho={item.tamanho}
+                  tempoPreparo={item.preparo}
+                  unidades={item.unidades}
+                  src={item.src}
+                  alt={item.alt}
+                  ingredientes={item.ingredientes}
+                />
+              </div>
+            ))}
           </Section>
+
+          {quantidadePedido > 0 && (
+            <button id="btn-finalizar" className="btn-finalizar" onClick={finalizarPedido}>
+              Finalizar Pedido ({quantidadePedido} produtos)
+            </button>
+          )}
         </main>
       </div>
     </>
-  )
+  );
 }
 export default App
 
